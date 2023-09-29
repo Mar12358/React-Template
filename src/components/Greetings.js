@@ -7,17 +7,17 @@ function Greeting() {
   const randomGreeting = useSelector((store) => store.message.greeting);
   const isLoading = useSelector((store) => store.message.isLoading);
   const error = useSelector((store) => store.message.error);
-  const errorMessage = useSelector((store) => store.message.errMsg)
+  const errorMessage = useSelector((store) => store.message.errMsg);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchGreeting())
-  }, [dispatch])
+    dispatch(fetchGreeting());
+  }, [dispatch]);
 
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
   if (error) {
-    return <h1>{errorMessage}</h1>
+    return <h1>{errorMessage}</h1>;
   }
 
   return (

@@ -21,16 +21,12 @@ const greetingSlice = createSlice({
         state.greeting = action.payload;
         state.isLoading = false;
         state.error = false;
-
       }).addCase(fetchGreeting.rejected, (state, action) => {
-        
         state.isLoading = false;
         state.error = true;
-        console.log(action.error)
         state.errMsg = action.error.message;
-        
       });
-  }
-})
+  },
+});
 
 export default greetingSlice.reducer;
