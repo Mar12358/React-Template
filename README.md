@@ -64,35 +64,30 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Greetings Rails API <a name="about-project"></a>
 
-> The HGreetings Rails API App is an example of a Ruby on Rails app providing API Endpoint to connect to a Front-end of your choice. In payload it provides a random greeting message.
+> The Hello React Front End App fetchs the API endpoint provided by [Hello Rails Back End App](https://github.com/Mar12358/hello-rails-back-end). This is an example of a React JS front-end app connected to the API of your choice.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> The App was built with Ruby on Rails and PSQL
+> The App was built with React and Redux.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://react.dev/">React</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **API Endpoint**
-- **Ruby on Rails**
-- **Randomly select a Greeting**
+- **React front-end**
+- **Fetch a Randomly generated Greeting from API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +113,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Ruby
+- NodeJS
 
 
 ### Setup
@@ -128,7 +123,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Mar12358/hello-rails-back-end.git
+  git clone https://github.com/Mar12358/hello-react-front-end.git
 ```
 
 ### Install
@@ -137,24 +132,21 @@ Install this project with:
 
 
 ```sh
-  bundle install
+  npm install
 ```
 
 ### Usage
 
-To run the project, execute the following commands:
+To run the project, you need to build it:
 
-Run seeds (You need to first configure database.yml with your pg username and password)
+Run:
 ```
-rails db:drop
-rails db:create
-rails db:migrate
-rails db:seed
+npm run build
 ```
 
 Run server
 ```
-rails server
+npm start
 ```
 
 <!-- ### Run tests
@@ -196,7 +188,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add More enpoints**
+- [ ] **Fetch more endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -233,7 +225,7 @@ I would like to thank Microverse and all my collegues for this fast-paced learni
 
 - **Do I need to install any program before running this project?**
 
-  - [ ] **Yes, you need to install PostgreSQL and Ruby** 
+  - [ ] **Yes, you need to install Node** 
   
   <br>
 
